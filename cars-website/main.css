@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca:wght@100;400&display=swap');
+*{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+/* main css */
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5;
+    word-wrap: break-word;
+    color: white;
+    font-size: .85em;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.preview-card{
+    width: 70vw;
+    display: flex;
+    /* flex-direction: row; */
+    word-spacing: .15rem;
+    overflow: hidden;
+    /* margin: 0 auto; */
+    align-items: flex-end;
+  
+   
+}
+.cars{
+    flex-basis: 1;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-content: flex-start;
+}   
+.sedan{
+    background-color: #E28525;
+    border-bottom-left-radius: 2%;
+    border-top-left-radius: 2%;
+}
+.suv{
+    background-color: #016972;
+  
+   
+  
+}
+.luxury{
+    background-color:#003F3E ;
+    border-bottom-right-radius: 2%;
+    border-top-right-radius: 2%;
+
+  
+    
+}
+.cars a {
+    text-decoration: none;
+    margin-top: auto;
+    padding: 10px 10px;
+    background-color: white;
+    border-radius: 25px;
+    width: 100px;
+    text-align: center;
+    font-size: 1.2em;
+
+    
+}
+.cars > img {
+    width:  60px;
+}
+.car-brand{
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 400;
+    font-size: 2em;
+}
+.sedan a {
+    color: #E28525;
+}
+.suv a{
+    color: #016972;
+}
+.luxury a {
+    color:#003F3E ;
+}
+
+
+@media(max-width:1000px){
+.preview-card {
+    width: fit-content;
+    flex-direction: column;
+    height: max-content;
+    margin: 0 auto;
+    
+    }
+.cars{
+        width: initial;
+        height: 350px;
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        
+
+}
+.sedan{
+    border-top-left-radius:2%;
+    border-top-right-radius: 2%;
+}
+
+.luxury{
+    border-bottom-left-radius:2%;
+    border-bottom-right-radius: 2%;
+}
+.cars article {
+    max-width: 250px;
+}
+}
