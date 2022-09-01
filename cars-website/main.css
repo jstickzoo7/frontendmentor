@@ -2,10 +2,10 @@
 *{
     box-sizing: border-box;
 }
-*,
-*::after,
-*::before{
+*{
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -17,29 +17,28 @@ body{
     color: white;
     font-size: .85em;
     font-weight: 400;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    
     
 }
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 .preview-card{
     width: 70vw;
     display: flex;
-    /* flex-direction: row; */
     word-spacing: .15rem;
     overflow: hidden;
-    /* margin: 0 auto; */
     align-items: flex-end;
-  
-   
 }
 .cars{
     flex-basis: 1;
     padding: 30px 40px;
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 330px;
     align-content: flex-start;
 }   
 .sedan{
@@ -81,6 +80,7 @@ body{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 400;
     font-size: 2em;
+    margin-top: 10px;
 }
 .sedan a {
     color: #E28525;
@@ -94,32 +94,32 @@ body{
 
 
 @media(max-width:1000px){
-.preview-card {
+.preview-card{
     width: fit-content;
     flex-direction: column;
     height: max-content;
-    margin: 0 auto;
-    
+    margin: 0 auto; 
     }
 .cars{
-        width: initial;
-        height: 350px;
-        padding: 30px 40px;
-        display: flex;
-        flex-direction: column;
-        
-
+    width: initial;
+    height: 300px;
+    padding: 30px 40px;
+    display: flex;
+  flex-direction: column;
 }
 .sedan{
     border-top-left-radius:2%;
     border-top-right-radius: 2%;
+    border-bottom-left-radius: 0;
 }
 
 .luxury{
     border-bottom-left-radius:2%;
     border-bottom-right-radius: 2%;
+    border-top-right-radius: 0; 
 }
 .cars article {
     max-width: 250px;
 }
 }
+
