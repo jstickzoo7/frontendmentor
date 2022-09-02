@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+:root{
+    --dark-color: #0B0D17;
+    --light-color:#D0D6F9;
+    --white-color:#FFFFFF;
+    --background-color:#F2F2F2;
+}
+/* general styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.subheading1{
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: var(--white-color);
+}
+h1{
+    font-size: 150px;
+}
+h2{
+    font-size: 100px;
+}
+h3{
+    font-size: 56px;
+}
+h4{
+    font-size: 32px;
+}
+h5,
+.subheading2,
+.nav-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 28px;
+    word-spacing: .5rem;
+}
+.subheading1{
+    font-size: 28px;
+}
+.subheading2{
+    font-size: 14px;
+    word-spacing: 2.35;
+}
+.nav-text{
+    font-size: 16px;
+    word-spacing: .4rem;
+}
+.body-text{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: normal;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image:url(/assets/home/background-home-desktop.jpg);
+    object-fit: contain;
+    position: relative;
+
+
+}
+.light{
+    color: var(--light-color);
+}
+/* End of general styling */
+ 
+
+/*Navigation  */
+.navigation{
+    /* border: 1px solid black; */
+    position: relative;
+    top: 30px;
+    left: 50px;
+    width:96.37%;
+    height: 98px;
+    display:flex;
+    align-items: center;
+
+}
+.links{
+    width: 500px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    
+}
+/* End of navigation */
+
+/* start of hero session */
+.logo{
+    margin-right: auto;
+}
+.align-right{
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter:  blur(12px);
+    height: 100%;
+    width: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.align-right li a {
+    display: inline-block;
+    color: var(--white-color);
+  
+}
+.hero{
+    width:450px;
+    /* border: 1px solid black; */
+    position: relative;
+    top:200px;
+    left: 165px;
+}
+.aside{
+    position:absolute;
+    top:360px;
+    left: 920px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}
+.center{
+    color: var(--dark-color);
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    left: 19%;
+    /* transform: transform(-50%, -50%); */
+    width: 40px;
+    letter-spacing: 2px;
+    
+}
+
