@@ -17,7 +17,6 @@ h1,
 h2,
 h3,
 h4,
-h5,
 .subheading1{
     font-family: 'Bellefair', serif;
     text-transform: uppercase;
@@ -36,6 +35,7 @@ h3{
 h4{
     font-size: 32px;
 }
+
 h5,
 .subheading2,
 .nav-text{
@@ -45,6 +45,9 @@ h5,
 h5{
     font-size: 28px;
     word-spacing: .5rem;
+    color: var(--white-color);
+    font-weight: 400;
+    
 }
 .subheading1{
     font-size: 28px;
@@ -52,6 +55,7 @@ h5{
 .subheading2{
     font-size: 14px;
     word-spacing: 2.35;
+    color: var(--white-color);
 }
 .nav-text{
     font-size: 16px;
@@ -63,15 +67,13 @@ h5{
     line-height: 1.5;
     font-size: normal;
 }
-body{
+.main{
     width: 100vw;
     overflow-x: hidden;
     height: 100vh;
     background-image:url(/assets/home/background-home-desktop.jpg);
     object-fit: contain;
-    position: relative;
-
-
+    /* position: relative; */
 }
 .light{
     color: var(--light-color);
@@ -89,18 +91,28 @@ body{
     height: 98px;
     display:flex;
     align-items: center;
+}
+.long-ruler{
+    height: 1px;
+    width: 473px;
+    background-color: var(--white-color);
+    opacity: 25.15%;
+    position: absolute;
+    left: 120px;
+    z-index: 2;
 
 }
 .links{
     width: 500px;
-    /* border: 1px solid black; */
+    height: 100%;
     display: flex;
     justify-content: space-around;
+    padding-top: 40px;
     
 }
-/* End of navigation */
-
-/* start of hero session */
+.nav-text .hover-effect:hover{
+    border-bottom:3px solid var(--white-color) ;
+}
 .logo{
     margin-right: auto;
 }
@@ -112,39 +124,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .align-right li a {
     display: inline-block;
     color: var(--white-color);
   
 }
-.hero{
-    width:450px;
-    /* border: 1px solid black; */
-    position: relative;
-    top:200px;
-    left: 165px;
-}
-.aside{
-    position:absolute;
-    top:360px;
-    left: 920px;
-    width: 220px;
-    height: 220px;
-    border-radius: 50%;
-    background-color: var(--white-color);
-}
-.center{
-    color: var(--dark-color);
-    text-align: center;
-    position: absolute;
-    top: 46%;
-    left: 19%;
-    /* transform: transform(-50%, -50%); */
-    width: 40px;
-    letter-spacing: 2px;
-    
-}
 
+/* End of navigation */

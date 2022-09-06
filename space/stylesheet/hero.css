@@ -1,0 +1,29 @@
+@import url("/stylesheet/base.css");
+/* hero session */
+.hero{
+    width:450px;
+    /* border: 1px solid black; */
+    position: relative;
+    top:200px;
+    left: 165px;
+}
+.aside{
+    position:relative;
+    top:-40px;
+    left: 900px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+.center{
+    color: var(--dark-color);
+    text-align: center;
+    position: absolute;
+    top: 43%;
+    left: 19%;
+    width: 40px;
+    letter-spacing: 2px;    
+}
+/* End of hero session */

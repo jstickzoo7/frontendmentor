@@ -3,35 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="/stylesheet/destination.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
+  <div class="main">
+    <div class="contianer">
+      <header>
+        <nav class="navigation">
+            <img class="logo" src="/assets/shared/logo.svg" alt="">
+            <div class="long-ruler"></div>
+            <div class="align-right">
+              <ul class="links nav-text">
+                <li class="hover-effect"><a href="/html/index.html">00 Home</a></li>
+                <li class="hover-effect"><a href="/html/destination-moon.html">01 Destination</a></li>
+                <li class="hover-effect"><a href="/html/crew-commander.html">02 Crew</a></li>
+                <li class="hover-effect"><a href="/html/technology-vehicle.html">03 Technology</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+      <div class="main">
+        <div class="tag">
+            <h5>01 Pick your destination</h5>
+        </div>
+        <div class="destination-image">
+          <img class="destination-image" src="/assets/destination/image-mars.webp" alt="moon-image">
+        </div>
+    </div>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
+    <div class="destinations">
+      <ul class="destination-planets nav-text">
+        <li><a href="/html/destination-moon.html">Moon</a></li>
+        <li><a href="/html/destination-mars.html">Mars</a></li>
+        <li><a href="/html/destination-europa.html">Europa</a></li>
+        <li><a href="/html/destination-titan.html">Titan</a></li>
+      </ul>
+      <h2 class="current-location">Mars</h2>
+      <article class="body-text light">
+        Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
   the tallest planetary mountain in our solar system. It’s two and a half times 
   the size of Everest!
+      </article>
+      <div class="horizontal-rule">boy</div>
+      <div class="planet-distance-info">
+        <div class="distance">
+          <header class="subheading2">Avg. distance</header>
+          <small class="subheading1">225 mil. km</small>
+        </div>
+        <div class="distance">
+          <header class="subheading2">Est. travel time</header>
+          <small class="subheading1">9 months</small>
+        </div>
+      </div>
+    </div>
 
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
+   
+  </div>
+  </div>
 </body>
 </html>
