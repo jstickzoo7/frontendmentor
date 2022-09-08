@@ -86,6 +86,17 @@ h5{
     top:170px;
     left: 170px;
 }
+.special{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4.75ggit git px;
+    line-height: 34px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+
+
+}
 /* End of general styling */
  
 
@@ -138,8 +149,7 @@ h5{
 }
 .align-right li a {
     display: inline-block;
-    color: var(--white-color);
-  
+    color: var(--white-color);  
 }
 
 /* End of navigation */
