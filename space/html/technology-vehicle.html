@@ -5,28 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/stylesheet/technology.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
+  <div class="contianer">
+    <div class="main">
+      <header>
+        <nav class="navigation">
+            <img class="logo" src="/assets/shared/logo.svg" alt="">
+            <div class="long-ruler"></div>
+            <div class="align-right">
+              <ul class="links nav-text">
+                <li class="hover-effect"><a href="/html/index.html">00 Home</a></li>
+                <li class="hover-effect"><a href="/html/destination-moon.html">01 Destination</a></li>
+                <li class="hover-effect"><a href="/html/crew-commander.html">02 Crew</a></li>
+                <li class="hover-effect active"><a href="/html/technology-vehicle.html">03 Technology</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header> 
+      <div><h5 class="tag">03 Space launch 101</h5></div>
+    <div class="slider">
+      <a class="sl-active" href="/html/technology-vehicle.html"><h4 class="number">1</h4></a>
+      <a href="/html/technology-spaceport.html"><h4 class="number">2</h4></a>
+      <a href="/html/technology-capsule.html"><h4 class="number">3</h4></a>
+    </div>
+    <div class="launch">
+      <h5 class="light">The terminology...</h5>
+      <h3>Launch vehicle</h3>
+      <article class="body-text light">
+        A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+        payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+        WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+        it's quite an awe-inspiring sight on the launch pad!
+      </article>
+    </div>
+    <div class="image-contianer">
+      <img src="/assets/technology/image-launch-vehicle-portrait.jpg" alt="image-launch-vehicle-portrait">
+    </div>
+    </div>
+  </div>
 </body>
 </html>

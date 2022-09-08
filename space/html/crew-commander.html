@@ -5,23 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/stylesheet/crew.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Commander
-  Douglas Hurley
-
-  Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
-  and former NASA astronaut. He launched into space for the third time as 
-  commander of Crew Dragon Demo-2.
+  <div class="contianer">
+    <div class="main">
+      <header>
+        <nav class="navigation">
+            <img class="logo" src="/assets/shared/logo.svg" alt="">
+            <div class="long-ruler"></div>
+            <div class="align-right">
+              <ul class="links nav-text">
+                <li class="hover-effect"><a href="/html/index.html">00 Home</a></li>
+                <li class="hover-effect"><a href="/html/destination-moon.html">01 Destination</a></li>
+                <li class="hover-effect active"><a href="/html/crew-commander.html">02 Crew</a></li>
+                <li class="hover-effect"><a href="/html/technology-vehicle.html">03 Technology</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+      <div>
+        <h5 class="tag">02 Meet your crew</h5>
+      </div>
+      <div class="crew-bio">
+        <h4 class="title">Commander</h4>
+        <h3 class=crew-name>Douglas Hurley</h4>
+        <article class="body-text light">
+          Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+          and former NASA astronaut. He launched into space for the third time as 
+          commander of Crew Dragon Demo-2.
+        </article>
+      </div>
+      <div class="crew-image">
+        <img class="crew-image" src="/assets/crew/image-douglas-hurley.png" alt="image-douglas-hurley">
+      </div>
+      <div class="sliders">
+        <ul class="slide-contianer">
+          <li class="s-btn"><a href="/html/crew-commander.html"></a></li>
+          <li class="s-btn s-idle"><a href="/html/crew-specialist.html"></a></li>
+          <li class="s-btn s-idle"><a href="/html/crew-pilot.html"></a></li>
+          <li class="s-btn s-idle"><a href="/html/crew-engineer.html"></a>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

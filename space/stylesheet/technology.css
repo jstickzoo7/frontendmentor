@@ -1,0 +1,62 @@
+@import url(/stylesheet/base.css);
+.main{
+    background-image: url(/assets/technology/background-technology-desktop.jpg);
+    position: relative;
+    object-fit: contain;
+}
+.slider{
+    position: absolute;
+    left: 160px;
+    top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 260px;
+    width: 80px;
+}
+.slider a{
+    border: 2px solid rgba(208, 214, 249, 0.25);
+    mix-blend-mode: normal;
+    border-radius: 50%;
+    text-align: center;
+    height: 80px;
+    color: var(--white-color);
+    font-size: 25px;
+    
+}
+.slider a:hover{
+    border: 2px solid var(--white-color);
+
+}
+a .number{
+    position: relative;
+    top: 26%;
+    color: var(--white-color);
+}
+.sl-active{
+background-color: var(--white-color);
+}
+.sl-active .number{
+    color: black;
+}
+.launch{
+    position: absolute;
+    left: 320px;
+    top: 280px;    
+}
+h3{
+    margin: 12px 0 20px 0;
+}
+.image-contianer{
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    /* border: 2px solid crimson; */
+    right:0px;
+    top:200px;
+    object-fit: scale-down;
+}
+.image-contianer img{
+    width: 100%;
+    height: 100%;
+}

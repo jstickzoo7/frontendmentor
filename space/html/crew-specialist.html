@@ -5,23 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/stylesheet/crew.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Mission Specialist
-  Mark Shuttleworth
-
-  Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+  <div class="contianer">
+    <div class="main">
+      <header>
+        <nav class="navigation">
+            <img class="logo" src="/assets/shared/logo.svg" alt="">
+            <div class="long-ruler"></div>
+            <div class="align-right">
+              <ul class="links nav-text">
+                <li class="hover-effect"><a href="/html/crew-commander.html">00 Home</a></li>
+                <li class="hover-effect"><a href="/html/destination-moon.html">01 Destination</a></li>
+                <li class="hover-effect active"><a href="/html/crew-commander.html">02 Crew</a></li>
+                <li class="hover-effect"><a href="/html/technology-vehicle.html">03 Technology</a></li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+      <div>
+        <h5 class="tag">02 Meet your crew</h5>
+      </div>
+      <div class="crew-bio">
+        <h4 class="title">Mission Specialist</h4>
+        <h3 class=crew-name>Mark Shuttleworth</h4>
+        <article class="body-text light">
+          Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
   the Linux-based Ubuntu operating system. Shuttleworth became the first South 
   African to travel to space as a space tourist.
+        </article>
+      </div>
+      <div class="crew-image">
+        <img class="crew-image" src="/assets/crew/image-mark-shuttleworth.png" alt="image-mark-shuttleworth">
+      </div>
+      <div class="sliders">
+        <ul class="slide-contianer">
+          <li class="s-btn s-idle"><a href="/html/crew-commander.html"></a></li>
+          <li class="s-btn s-active"><a href="/html/crew-specialist.html"></a></li>
+          <li class="s-btn s-idle"><a href="/html/crew-pilot.html"></a></li>
+          <li class="s-btn s-idle"><a href="/html/crew-engineer.html"></a>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

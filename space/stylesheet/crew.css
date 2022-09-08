@@ -1,0 +1,59 @@
+@import url(/stylesheet/base.css);
+.main{
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+    position: relative;
+}
+.crew-image{
+    height: 500px;
+    width: 500px;
+    object-fit: contain;
+    position: absolute;
+    right: 60px;
+    top:115px
+}
+.crew-bio{
+    width: 680px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 280px;
+    left: 160px;
+}
+.crew-name{
+    margin: 10px 0 15px 0;
+}
+.title{
+    opacity: 0.5;
+    mix-blend-mode: normal;
+
+}
+.slide-contianer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height: 15px;
+    width: 120px;
+    position: absolute;
+    top: 580px;
+    left: 160px;
+    cursor: pointer;
+}
+.s-btn{
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+}  
+.s-idle{
+    opacity: 0.2;
+    mix-blend-mode: normal;
+}
+.s-btn:hover{
+    opacity: 0.6;
+}
+.s-btn a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
