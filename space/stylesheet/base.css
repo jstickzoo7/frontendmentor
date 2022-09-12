@@ -13,6 +13,9 @@
     list-style-type: none;
     text-decoration: none;
 }
+html{
+    font-size: 62.5%;
+}
 h1,
 h2,
 h3,
@@ -24,16 +27,16 @@ h4,
     color: var(--white-color);
 }
 h1{
-    font-size: 150px;
+    font-size: 15rem;
 }
 h2{
-    font-size: 100px;
+    font-size: 10rem;
 }
 h3{
-    font-size: 56px;
+    font-size: 5.6rem;
 }
 h4{
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 h5,
@@ -43,7 +46,7 @@ h5,
     text-transform: uppercase;
 }
 h5{
-    font-size: 28px;
+    font-size: 2.8rem;
     word-spacing: .5rem;
     color: var(--white-color);
     font-weight: 400;
@@ -94,8 +97,10 @@ h5{
     line-height: 34px;
     mix-blend-mode: normal;
     opacity: 0.25;
-
-
+}
+.main{
+    height: 100vh;
+    width: 100vw;
 }
 /* End of general styling */
  
@@ -153,3 +158,5 @@ h5{
 }
 
 /* End of navigation */
+
+

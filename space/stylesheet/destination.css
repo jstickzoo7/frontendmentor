@@ -2,6 +2,9 @@
 
 .main{
     background-image: url(/assets/destination/background-destination-desktop.jpg);
+    object-fit: cover;
+    height: 100vh;
+    
 }
 .contianer{
     position: relative;
@@ -61,3 +64,24 @@
     margin-bottom: 10px;
     color: var(--light-color);
 }
+
+/* Media query  */
+@media (min-width:461px) and (max-width:768px){
+    .html{
+     font-size: 6px;
+    }
+  .tag{
+    left: 7%;
+    top: 130px;
+  }
+  .destination-image{
+    width: 250px;
+    height: 250px;
+    top: 120px;
+  }
+  .destinations{
+    top: 550px;
+    left: 30%;
+  }
+}
+

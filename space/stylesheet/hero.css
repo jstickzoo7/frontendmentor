@@ -1,15 +1,19 @@
 @import url("/stylesheet/base.css");
+
 /* hero session */
+.contianer{
+    position: relative;
+}
 .hero{
     width:450px;
     /* border: 1px solid black; */
     position: relative;
-    top:200px;
+    top:260px;
     left: 165px;
 }
 .aside{
     position:relative;
-    top:-40px;
+    top:220px;
     left: 900px;
     width: 220px;
     height: 220px;
@@ -26,4 +30,37 @@
     width: 40px;
     letter-spacing: 2px;    
 }
+/* start of media query */
+@media (min-width:461px) and (max-width:768px){
+    .navigation{
+        width: 90%;
+        top: 0;
+    }
+    .long-ruler{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .body-text{
+       text-align: center;
+    }
+    .planet-distance-info{
+        display: flex;
+        justify-content: space-between;
+    }
+    .planet-distance-info .distance{
+        margin-right: 0;
+    }
+    .aside{
+        top: 500px;
+        left: 30%;
+    }
+}
+
+
+
 /* End of hero session */
