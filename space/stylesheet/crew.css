@@ -12,13 +12,17 @@
     margin: 0 auto;
     margin-top: 160px;
     margin-left: 12%;
+   
+
+}
+.image-contianer{
+    width: 400px;
+    height: 600px;
 
 }
 .crew-image{
-    height: 500px;
-    object-fit: contain;
-
-
+    width: 100%;
+    height: 100%;
 }
 .crew-bio{
     max-height: 400px;
@@ -32,7 +36,6 @@
 .title{
     opacity: 0.5;
     mix-blend-mode: normal;
-
 }
 .slide-contianer{
     margin-top: 80px;
@@ -69,6 +72,8 @@
     .wrapper{
         flex-direction: column;
         height: fit-content;
+        width: 100%;
+        margin-left: 0;
     }
     .crew-bio{
        text-align: center;
@@ -78,9 +83,15 @@
         margin: 0 auto;
         margin-top: 40px;
     }
-    .crew-image{
-        margin-top: 20px;
+    .image-contianer{
+        margin-top: 50px;
+        position: relative;
     }
+    .crew-image{
+        position: absolute;
+        bottom: 0px;
+    }
+
     .body-text{
         margin: 0 auto;
     }
