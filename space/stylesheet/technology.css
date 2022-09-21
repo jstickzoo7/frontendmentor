@@ -4,15 +4,23 @@
     position: relative;
     object-fit: contain;
 }
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 160px;
+    margin-left: 12%;
+    min-width: 88%;
+    justify-content: space-between;
+
+}
 .slider{
-    position: absolute;
-    left: 160px;
-    top: 280px;
+    align-self: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 260px;
     width: 80px;
+    
 }
 .slider a{
     border: 2px solid rgba(208, 214, 249, 0.25);
@@ -22,6 +30,7 @@
     height: 80px;
     color: var(--white-color);
     font-size: 25px;
+    position: relative;
     
 }
 .slider a:hover{
@@ -29,8 +38,9 @@
 
 }
 a .number{
-    position: relative;
-    top: 26%;
+    position: absolute;
+    top: calc(50% - 3.2rem / 2);
+    left: 41%;
     color: var(--white-color);
 }
 .sl-active{
@@ -40,22 +50,55 @@ background-color: var(--white-color);
     color: black;
 }
 .launch{
-    position: absolute;
-    left: 320px;
-    top: 280px;    
+    flex-shrink: 1;
+    flex-basis: 600px;
+    padding: 0 15px;
+    align-self: center;
+    justify-content: center;
 }
 h3{
     margin: 12px 0 20px 0;
 }
 .image-contianer{
+    flex-basis: 300px;
     height: 400px;
-    width: 400px;
-    position: absolute;
-    right:0px;
-    top:200px;
-    object-fit: scale-down;
+    
 }
 .image-contianer img{
     width: 100%;
     height: 100%;
+    object-fit: cover;   
+}
+
+@media (min-width:500px) and (max-width:820px){
+    .main{
+        background-image: url(/assets/technology/background-technology-tablet.jpg);
+    }
+    .wrapper{
+        flex-direction: column;
+        border: 2px solid black;
+        width: 100%;
+        margin-left: 0;
+    }
+    .image-contianer{
+        border: 2px solid black;
+        height: 400px;
+        order:1;
+    }
+    .slider{
+        order: 2;
+        flex-direction: row;
+        height: 80px;
+        width: 260px;
+        margin: 50px;
+
+    }
+    .slider a{
+        width: 80px;
+    }
+    .launch{
+        order: 3;
+        text-align: center;
+    }
+
 }

@@ -3,22 +3,28 @@
     background-image: url("/assets/crew/background-crew-desktop.jpg");
     position: relative;
 }
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 160px;
+    margin-left: 12%;
+
+}
 .crew-image{
     height: 500px;
-    width: 500px;
     object-fit: contain;
-    position: absolute;
-    right: 60px;
-    top:115px
+
+
 }
 .crew-bio{
-    width: 680px;
-    height: 400px;
+    max-height: 400px;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 280px;
-    left: 160px;
+   
 }
 .crew-name{
     margin: 10px 0 15px 0;
@@ -29,14 +35,12 @@
 
 }
 .slide-contianer{
+    margin-top: 80px;
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     height: 15px;
     width: 120px;
-    position: absolute;
-    top: 580px;
-    left: 160px;
     cursor: pointer;
 }
 .s-btn{
@@ -57,3 +61,27 @@
     height: 100%;
 }
 
+
+@media (min-width:500px) and (max-width:820px){
+    .main{
+        background-image: url(/assets/crew/background-crew-tablet.jpg);
+    }
+    .wrapper{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .crew-bio{
+       text-align: center;
+       justify-content: center;
+    }
+    .slide-contianer{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .crew-image{
+        margin-top: 20px;
+    }
+    .body-text{
+        margin: 0 auto;
+    }
+}
